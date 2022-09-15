@@ -14,7 +14,7 @@
 } */
 
 :root {
-    --color0: #040108;
+    --color0: #0d041b;
     --color1: #5185FD;
     --color2: black;
     --color3: #010C2C;
@@ -86,7 +86,7 @@ body {
 .hero {
     color: var(--color1);
     font-size: 22px;
-    padding: 6vh 4vh;
+    padding: 5vh 4vh;
 }
 
 
@@ -149,11 +149,12 @@ input {
     color: var(--color5);
     border-radius: 5px;
     padding: 5px;
-    background-color: var(--color2)
+    background-color: var(--color2);
+    border: 2px solid var(--color3);
 }
 
 input:invalid {
-    border: 2px solid var(--color3);
+    border: 2px solid rgb(184, 96, 24);
 }
 
 input:valid {

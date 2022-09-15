@@ -26,32 +26,32 @@
                     <fieldset>
                         <div class="input-field">
                             <label for="first_name">First name</label>
-                            <input type="text" id="first_name" name="first_name" required minlength="2">
+                            <input type="text" id="first_name" name="first_name" required minlength="1" maxlength="24" pattern="[a-zA-Z]{1,24}" placeholder="Bob" title="Please enter a name using letters only!">
                         </div>
                         <div class="input-field">
                             <label for="last_name">Last Name</label>
-                            <input type="text" id="last_name" name="last_name" required minlength="1">
+                            <input type="text" id="last_name" name="last_name" required minlength="1" maxlength="24" pattern="[a-zA-Z]{1,24}" placeholder="Smith" title="Please enter a last name using letters only!">
                         </div>
                     </fieldset>
                     <fieldset>
                         <div class="input-field">
                             <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required minlength="2">
+                            <input type="email" id="email" name="email" required minlength="2" maxlength="24" placeholder="BobSmith@Gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Please enter an email using the correct syntax example: Bob@gmail.com">
                         </div>
                         <div class="input-field">
 
                             <label for="phone_number">Phone Number</label>
-                            <input type="tel" id="phone_number" name="phone_number" required minlength="6" pattern="[0-9]{1-10}" placeholder="">
+                            <input type="tel" id="phone_number" name="phone_number" required minlength="6" maxlength="10" pattern="[0-9]{6-10}" placeholder="12332150" title="Please enter a phone number between 6-10 digits">
                         </div>
                     </fieldset>
                     <fieldset>
                         <div class="input-field">
                             <label for="password">Password</label>
-                            <input type="password" id="password" name="password" required minlength="6">
+                            <input type="password" id="password" name="password" required minlength="6" maxlength="24" placeholder="******" title="Please enter a pssword between 6-24 characters">
                         </div>
                         <div class="input-field">
                             <label for="confirm_password">Confirm Password</label>
-                            <input type="confirm_password" id="confirm_password" name="confirm_password" required minlength="2">
+                            <input type="password" id="confirm_password" name="confirm_password" required minlength="6" maxlength="24" placeholder="******" title="Please enter a pssword between 6-24 characters">
                         </div>
                     </fieldset>
                 </div>

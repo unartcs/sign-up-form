@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Form</title>
+    <link rel=stylesheet href="style.css">
+</head>
+
+<body>
+    <div class="left-side-container">
+        <img src="./imgs/logo.png" alt="Logo Image" class="image-logo">
+        <div class="image-footer">Photo by <a href="https://unsplash.com/@annabell_flem" class="image-credit">Anna Tsukanova
+            </a>on <a href="https://unsplash.com/" class="image-credit">Unsplash</a></div>
+    </div>
+    <div class="right-side-container">
+        <div class="hero">This is not a real online service! You know you need something like this in your life to help
+            you realize your deepest dreams.<br>Sign up now to get Started. <p>You know you want to.</p>
+        </div>
+        <div class="form-container">
+            <form>
+                <div class="reg-form">
+                    <legend>Lets do this!</legend>
+                    <fieldset>
+                        <div class="input-field">
+                            <label for="first_name">First name</label>
+                            <input type="text" id="first_name" name="first_name" required minlength="2">
+                        </div>
+                        <div class="input-field">
+                            <label for="last_name">Last Name</label>
+                            <input type="text" id="last_name" name="last_name" required minlength="1">
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <div class="input-field">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required minlength="2">
+                        </div>
+                        <div class="input-field">
+
+                            <label for="phone_number">Phone Number</label>
+                            <input type="tel" id="phone_number" name="phone_number" required minlength="6" pattern="[0-9]{1-10}" placeholder="">
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <div class="input-field">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" required minlength="6">
+                        </div>
+                        <div class="input-field">
+                            <label for="confirm_password">Confirm Password</label>
+                            <input type="confirm_password" id="confirm_password" name="confirm_password" required minlength="2">
+                        </div>
+                    </fieldset>
+                </div>
+                <button type="submit" class="create-button">Create Account!</button>
+            </form>
+        </div>
+        <div class="login-container">Already have an account? <span class="login-styled">Log in</span></div>
+    </div>
+</body>
+
+</html>
